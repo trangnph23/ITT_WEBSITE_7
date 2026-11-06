@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liên hệ | Into The Tech</title>
+<meta name="description" content="Liên hệ Into The Tech để trao đổi về đào tạo thương mại điện tử cho doanh nghiệp hoặc đăng ký khóa học cá nhân. Trụ sở tại Hồ Chí Minh, Việt Nam.">
+<meta name="dateModified" content="2026-11-06">
+<link rel="canonical" href="https://intothetechbiz.com/contact.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=4">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "about": {
+    "@type": "EducationalOrganization",
+    "name": "Into The Tech",
+    "email": "team@intothetechbiz.com",
+    "address": {"@type": "PostalAddress", "addressLocality": "Ho Chi Minh City", "addressCountry": "VN"}
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Into The Tech logo"></a>
+    <nav class="main-nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="corporate-training.html">Đào tạo doanh nghiệp</a>
+      <a href="students.html">Khóa học cá nhân</a>
+      <a href="trainers.html">Đội ngũ chuyên gia</a>
+    </nav>
+    <div class="header-actions">
+      <a href="contact.html" class="btn btn-primary">✉ Liên hệ</a>
+    </div>
+    <button class="mobile-nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<section class="hero dark">
+  <div class="wrap">
+    <h1>Liên hệ với ITT</h1>
+    <p class="lede measure">Bạn hãy để lại thông tin liên hệ ở form dưới đây nhé. Chúng tôi sẽ liên hệ qua email/điện thoại sau khi nhận biểu mẫu.</p>
+    <div class="hero-tags">
+      <span class="tag"><a href="mailto:team@intothetechbiz.com" style="color:inherit;">team@intothetechbiz.com</a></span>
+      <span class="tag">Hồ Chí Minh, Việt Nam</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="measure">
+      <form class="form-card" id="contact-form" data-gform-action="https://script.google.com/macros/s/AKfycbwHMjj7U3ZZf6defYV1rQ76V0Y1Zd0m_NH_Sb2GiZ3Piw-7HnX7_q2XswpVn7R27zJa/exec">
+        <fieldset class="type-toggle">
+          <legend>Bạn liên hệ về</legend>
+          <label class="type-option"><input type="radio" name="type" value="corporate" required><span><strong>Đào tạo doanh nghiệp</strong></span></label>
+          <label class="type-option"><input type="radio" name="type" value="student" required><span><strong>Khóa học cá nhân</strong></span></label>
+        </fieldset>
+
+        <div class="form-extra" hidden data-group="shared">
+          <div class="form-row"><label>Họ và tên</label><input type="text" name="name" maxlength="200" required></div>
+          <div class="form-row"><label>Email</label><input type="email" name="email" maxlength="200" required></div>
+          <div class="form-row"><label>Số điện thoại</label><input type="tel" name="phone" maxlength="20" pattern="[0-9+\s.\-]{8,20}" title="Vui lòng nhập số điện thoại hợp lệ" inputmode="tel" required></div>
+        </div>
+
+        <div class="form-extra" hidden data-group="corporate">
+          <div class="form-row"><label>Tên công ty</label><input type="text" name="company" maxlength="200" required></div>
+          <div class="form-row"><label>Quy mô công ty</label>
+            <select name="size">
+              <option>Dưới 20 người</option>
+              <option>20-100 người</option>
+              <option>Trên 100 người</option>
+            </select>
+          </div>
+          <div class="form-row"><label>Nhu cầu đào tạo</label><textarea name="need" maxlength="2000" placeholder="Ví dụ: đội ngũ marketing cần hiểu vận hành Shopee / TikTok Shop"></textarea></div>
+          <div class="form-row"><label>Ngân sách dự kiến (không bắt buộc)</label><input type="text" name="budget" maxlength="200"></div>
+        </div>
+
+        <div class="form-extra" hidden data-group="student">
+          <div class="form-row"><label>Kinh nghiệm hiện tại</label>
+            <select name="experience">
+              <option>Sinh viên mới ra trường</option>
+              <option>Dưới 3 năm kinh nghiệm thương mại điện tử</option>
+              <option>Khác</option>
+            </select>
+          </div>
+          <div class="form-row"><label>Bạn biết đến ITT qua đâu?</label><input type="text" name="source" maxlength="200"></div>
+        </div>
+
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="btn btn-primary" id="submit-btn" hidden>Gửi liên hệ</button>
+      </form>
+      <div class="confirm-msg" data-corporate="Cảm ơn bạn đã liên hệ, ITT sẽ phản hồi sớm nhất có thể." data-student="Cảm ơn bạn đã đăng ký, ITT sẽ liên hệ sớm."></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="brand" style="color:#fff;margin-bottom:12px;">Into The Tech</div>
+      <p class="small">Đối tác đào tạo thương mại điện tử tại Việt Nam.</p>
+    </div>
+    <div>
+      <h4>Điều hướng</h4>
+      <a href="index.html">Trang chủ</a>
+      <a href="corporate-training.html">Đào tạo doanh nghiệp</a>
+      <a href="trainers.html">Đội ngũ chuyên gia</a>
+    </div>
+    <div>
+      <h4>Liên hệ</h4>
+      <a href="mailto:team@intothetechbiz.com">team@intothetechbiz.com</a>
+      <a href="https://vn.linkedin.com/company/intothetech" target="_blank" rel="noopener">LinkedIn</a>
+      <span class="small">Hồ Chí Minh, Việt Nam</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Into The Tech</span>
+    <span>Cập nhật lần cuối: 06/11/2026</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js?v=4"></script>
+</body>
+</html>
